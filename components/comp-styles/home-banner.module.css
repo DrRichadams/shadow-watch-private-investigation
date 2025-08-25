@@ -55,6 +55,9 @@
 .client_trust_box_container p {
   text-align: left;
   transform: translateX(-45px);
+  font-family: roboto;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .client_trust_box {

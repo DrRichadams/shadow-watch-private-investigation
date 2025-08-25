@@ -5,7 +5,7 @@ import styles from "./comp-styles/home-banner.module.css";
 import Spacer from "./global-effectors/outer-spacing";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Thumbs } from "swiper/modules";
+import { Thumbs, Autoplay } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/thumbs";
@@ -23,15 +23,19 @@ export default function Banner() {
   return (
     <header className={styles.banner_container}>
       <Swiper
-        modules={[Thumbs]}
+        modules={[Thumbs, Autoplay]}
         thumbs={{ swiper: thumbsSwiper }}
         spaceBetween={10}
+        autoplay={{
+          delay: 10000, // 10 seconds
+          disableOnInteraction: false, // keeps autoplay after user interaction
+        }}
         className={styles.banner_swiper}
         // className="mb-4 h-64 w-full"
       >
         {slides.map((slide_item) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={slide_item.id}>
               <div className={styles.banner}>
                 <Image
                   src={slide_item.image}
@@ -45,6 +49,7 @@ export default function Banner() {
                       <div className={styles.client_trust_box}>
                         {face.map((face, index) => (
                           <CircleImage
+                            key={index}
                             src={face}
                             alt="man"
                             classname={`${styles.client_circle}${index + 1}`}
