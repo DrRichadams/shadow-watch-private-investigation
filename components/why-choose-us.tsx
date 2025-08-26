@@ -28,12 +28,15 @@ export default function WhyChooseUs() {
     <section className={styles.why_us_container}>
       <h3 className={styles.why_us_title}>Why Choose Us?</h3>
       <p className={styles.why_us_description}>
-        We are committed to delivering the best security services to our
-        clients. Our team of trained professionals provides 24/7 monitoring,
-        rapid response, and customized protection plans to ensure your safety
-        and peace of mind. With advanced technology and a client-focused
-        approach, we safeguard your assets and premises with reliability and
-        integrity.
+        We offer a comprehensive range of security and investigative services,
+        including Infidelity Investigations with a discreet process and
+        confidentiality assurance, DNA Testing Verifications through certified
+        labs with high accuracy rates, and Polygraph (Lie Detector) Services
+        conducted by qualified examiners. Our Company Background Checks provide
+        corporate due diligence and business intelligence reports for risk
+        mitigation, while our Fraud Investigations cover financial fraud,
+        identity theft, and recovery assistance. All findings are presented
+        professionally, ensuring your privacy and peace of mind.
       </p>
       <div className={styles.why_us_details_box}>
         {whys.map((why) => (

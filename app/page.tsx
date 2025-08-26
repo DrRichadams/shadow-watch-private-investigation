@@ -4,6 +4,7 @@ import MainNavigation from "@/components/main-navigation";
 import About from "@/components/about";
 import WhyChooseUs from "@/components/why-choose-us";
 import Testimonial from "@/components/testimonial";
+import ContactUs from "@/components/contact-us";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <WhyChooseUs />
       <Testimonial />
+      <ContactUs />
     </div>
   );
 }
