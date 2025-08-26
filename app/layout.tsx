@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Roboto,
+  Bangers,
+  Rubik_Distressed,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,6 +26,18 @@ const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
 });
 
+const bangers = Bangers({
+  variable: "--font-bangers",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const rubik_distressed = Rubik_Distressed({
+  variable: "--font-rubik-distressed",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Shadow Watch",
   description:
@@ -34,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${bangers.variable} ${rubik_distressed.variable} antialiased`}
       >
         {children}
       </body>

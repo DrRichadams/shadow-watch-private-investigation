@@ -1,0 +1,62 @@
+.why_us_container {
+  min-height: 100vh;
+  padding: 4rem 12rem;
+}
+
+.why_us_title {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  width: fit-content;
+  font-family: roboto;
+  font-size: 4rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.why_us_description {
+  font-family: roboto;
+  font-weight: 300;
+  max-width: 800px;
+}
+
+.why_us_details_box {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.why_us_box {
+  --sqr_width: 300px;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid #eee; */
+  border-radius: 8px;
+  /* background-color: #f9f9f9; */
+  background-color: transparent;
+  background: radial-gradient(
+    circle farthest-corner at -5.6% -6.8%,
+    rgba(103, 49, 145, 1) 37.3%,
+    rgba(50, 0, 129, 1) 73.5%
+  );
+  width: var(--sqr_width);
+  height: var(--sqr_width);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.why_us_inner_box {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.why_us_inner_box p {
+  font-family: roboto;
+  font-size: 0.8rem;
+}

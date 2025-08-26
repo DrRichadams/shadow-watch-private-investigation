@@ -6,7 +6,8 @@
 }
 
 .about_inner_circle_container {
-  --outer_circle_radius: 800px;
+  /* --outer_circle_radius: 800px; */
+  --outer_circle_radius: 550px;
   /* background-color: #fff; */
   border: 2px solid #fff;
   width: 100%;
@@ -40,12 +41,14 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin-top: 3rem;
 }
 
 .about_main_subtitle {
   max-width: calc(var(--outer_circle_radius) / 2);
   text-align: center;
   font-family: roboto;
+  font-size: 0.85rem;
   font-weight: 300;
 }
 
@@ -62,9 +65,9 @@
 .about_main_button:hover {
   text-decoration: underline;
 }
-
+/* 
 .about_inner_details_circle {
-  --inner_circle_radius: 300px;
+  --inner_circle_radius: 200px;
   background-color: #fff;
   border-radius: 50%;
   width: 100%;
@@ -99,34 +102,19 @@
 }
 
 .about_inner_details_1 {
-  /* top: -12%;
-  left: 10%; */
-  /* top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%); */
   top: 15%;
   left: 15%;
   transform: translate(-50%, -50%);
 }
 
 .about_inner_details_2 {
-  /* top: 30%;
-  left: 80%; */
-  /* top: 50%;
-  left: 0;
-  transform: translate(-50%, -50%); */
   bottom: 15%;
   left: 15%;
   transform: translate(-50%, 50%);
 }
 
 .about_inner_details_3 {
-  /* bottom: -15%;
-  left: 80%; */
-  /* top: 50%;
-  right: 0;
-  transform: translate(50%, -50%); */
   top: 50%;
   right: 0;
   transform: translate(50%, -50%);
-}
+} */

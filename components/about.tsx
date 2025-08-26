@@ -97,6 +97,7 @@ export default function About() {
             {circle.icon}
             <h4>{circle.title}</h4>
             <p>{circle.description}</p>
+            <div className="dotted_border"></div>
           </div>
         ))}
         {/* <div

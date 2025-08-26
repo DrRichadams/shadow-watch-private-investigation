@@ -1,0 +1,68 @@
+.testimonial_container {
+  min-height: 100vh;
+  padding: 4rem 12rem;
+}
+
+.testimonial_heading {
+  font-family: bangers;
+  font-size: 4rem;
+  /* color: #3d3d3d; */
+  background: linear-gradient(90deg, #ff89f7, #545454);
+  width: fit-content;
+  padding: 0 6px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* text-shadow: 2px 2px 4px #bdbdbd33, -2px -2px 4px #ffffff25; */
+}
+
+.testimonial_text {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border-left: 5px solid #ff89f7;
+  padding-left: 8px;
+  margin-left: 12px;
+}
+
+.testimonial_card {
+  /* background-color: #ffffff33; */
+  height: 400px;
+  width: 100%;
+  /* clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    62% 76%,
+    0% 75%
+  ); */
+  padding: 4rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: blue; */
+  /* width: 100%; */
+  /* height: 70vh; */
+}
+
+.testimonial_message {
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+
+.testimonial_author {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #666666;
+}
