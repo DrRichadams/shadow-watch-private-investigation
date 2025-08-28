@@ -3,30 +3,35 @@
     "id": 1,
     "title": "Infidelity Investigation",
     "description": "At Shadow Watch, we conduct discreet, professional, and comprehensive investigations designed to confirm or dispel suspicions of infidelity. Our approach is built on confidentiality, accuracy, and sensitivity, ensuring that you receive clear answers and peace of mind during uncertain times.",
-    "image": "/banner-slides/infidelity.jpg"
+    "image": "/banner-slides/infidelity.jpg",
+    "icon": "<FaMagnifyingGlass />"
   },
   {
     "id": 2,
     "title": "DNA Testing Verifications",
     "description": "Shadow Watch offers reliable DNA testing services to help establish biological relationships, most commonly used in paternity cases. Our team ensures that every test is conducted with the utmost accuracy, confidentiality, and professionalism. We guide you through the process, providing clear results and support, so you can make informed decisions with confidence and clarity.",
-    "image": "/banner-slides/verifications.jpg"
+    "image": "/banner-slides/verifications.jpg",
+    "icon": "<FaDna />"
   },
   {
     "id": 3,
     "title": "Polygraph (Lie Detector) Services",
     "description": "Our professional polygraph services at Shadow Watch are designed to evaluate the truthfulness of individuals in a variety of situations. Using advanced technology and certified examiners, we conduct thorough assessments with sensitivity and discretion. Whether for personal, legal, or corporate matters, our lie detection services provide reliable insights and peace of mind.",
-    "image": "/banner-slides/polygraphy.jpg"
+    "image": "/banner-slides/polygraphy.jpg",
+    "icon": "<PiPolygonBold />"
   },
   {
     "id": 4,
     "title": "Company Background Checks",
     "description": "Shadow Watch conducts in-depth investigations into companies, providing comprehensive background checks, financial status reviews, and reputational analysis. Our meticulous approach ensures you have all the information needed to make informed business decisions, mitigate risks, and safeguard your interests in any corporate engagement.",
-    "image": "/banner-slides/background.jpg"
+    "image": "/banner-slides/background.jpg",
+    "icon": "<FaSpellCheck />"
   },
   {
     "id": 5,
     "title": "Fraud Investigations",
     "description": "Our team at Shadow Watch specializes in comprehensive investigations into fraudulent activities, including financial fraud, identity theft, and scams. We employ advanced techniques and a thorough approach to uncover evidence, protect your assets, and help you navigate complex situations with clarity and confidence.",
-    "image": "/banner-slides/fraud.jpg"
+    "image": "/banner-slides/fraud.jpg",
+    "icon": "<MdOutlineLocationSearching />"
   }
 ]

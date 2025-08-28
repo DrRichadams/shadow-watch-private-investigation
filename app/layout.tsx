@@ -5,6 +5,7 @@ import {
   Roboto,
   Bangers,
   Rubik_Distressed,
+  Inter,
 } from "next/font/google";
 import "./globals.css";
 
@@ -36,6 +37,12 @@ const rubik_distressed = Rubik_Distressed({
   variable: "--font-rubik-distressed",
   subsets: ["latin"],
   weight: ["400"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700", "900"],
 });
 
 export const metadata: Metadata = {

@@ -5,6 +5,9 @@ import About from "@/components/about";
 import WhyChooseUs from "@/components/why-choose-us";
 import Testimonial from "@/components/testimonial";
 import ContactUs from "@/components/contact-us";
+import Footer from "@/components/footer";
+import Newsletter from "@/components/newsletter";
+import Services from "@/components/services";
 
 export default function Home() {
   return (
@@ -13,8 +16,11 @@ export default function Home() {
       <Banner />
       <About />
       <WhyChooseUs />
+      <Services />
       <Testimonial />
       <ContactUs />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }
