@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <div className={styles.home_container}>
       <MainNavigation />
-      <Banner />
-      <About />
+      {/*<Banner />
+       <About />
       <WhyChooseUs />
       <Services />
       <Testimonial />
       <ContactUs />
       <Newsletter />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

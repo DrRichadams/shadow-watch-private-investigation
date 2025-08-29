@@ -18,26 +18,27 @@
 }
 
 .logo {
-  background: #020024;
+  --box-size: 70px;
+  /* background: #020024;
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(9, 9, 121, 1) 35%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ); */
   /* flex: 1; */
   display: flex;
   align-items: center;
   justify-content: center;
   /* max-width: 200px; */
-  width: 200px;
-  height: 200px;
+  width: var(--box-size);
+  height: var(--box-size);
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  clip-path: polygon(100% 0, 0 0, 51% 100%);
-  filter: drop-shadow(0 4px 10px rgba(255, 255, 255, 0.4));
+  /* clip-path: polygon(100% 0, 0 0, 51% 100%); */
+  /* filter: drop-shadow(0 4px 10px rgba(255, 255, 255, 0.4)); */
 }
 
 .logo_image {
