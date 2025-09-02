@@ -35,7 +35,10 @@ export default function Banner() {
       >
         {slides.map((slide_item) => {
           return (
-            <SwiperSlide key={slide_item.id}>
+            <SwiperSlide
+              key={slide_item.id}
+              className={styles.swiper_slide_main}
+            >
               <div className={styles.banner}>
                 <Image
                   src={slide_item.image}

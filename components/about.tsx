@@ -87,9 +87,6 @@ export default function About() {
             className={`about_inner_details_${
               index + 1
             } about_inner_details_circle`}
-            // className={`${styles.about_inner_details_(index + 1)} ${styles.about_inner_details_circle}`}
-            // className={`${styles.about_inner_[index + 1]} ${styles.about_inner_details_circle}`}
-            // ref={(el) => (circlesRef.current[index] = el)}
             ref={(el: HTMLDivElement | null) => {
               if (el) circlesRef.current[index] = el;
             }}
@@ -100,36 +97,32 @@ export default function About() {
             <div className="dotted_border"></div>
           </div>
         ))}
-        {/* <div
-          className={`${styles.about_inner_details_1} ${styles.about_inner_details_circle}`}
-          ref={circleRef}
-        >
-          <MdOutlineTimer size={30} color="#fd1d1d" />
-          <h4>Timely Delivery</h4>
-          <p>
-            We respond in time, we deliver results in time and we work with time
-          </p>
-        </div>
-        <div
-          className={`${styles.about_inner_details_2} ${styles.about_inner_details_circle}`}
-        >
-          <BiSolidBusiness size={30} color="#fd1d1d" />
-          <h4>Business Acumen</h4>
-          <p>
-            We understand the business landscape and provide solutions that
-            drive success.
-          </p>
-        </div>
-        <div
-          className={`${styles.about_inner_details_3} ${styles.about_inner_details_circle}`}
-        >
-          <ImHappy2 size={30} color="#fd1d1d" />
-          <h4>Customer Satisfaction</h4>
-          <p>
-            We prioritize our clients' needs and strive to exceed their
-            expectations.
-          </p>
-        </div> */}
+      </div>
+      <div className={styles.mobile_about_container}>
+        <h3 className={styles.mobile_about_main_title}>OUR QUALITIES</h3>
+        <p className={styles.mobile_about_main_subtitle}>
+          These are the qualities that make us your most trusted partner in your
+          journey of Security and private investigations
+        </p>
+        <button className={styles.mobile_about_main_button}>
+          <p>About Us</p> <MdOutlineArrowOutward />
+        </button>
+        {circleData.map((circle, index) => (
+          <div
+            key={circle.id}
+            className={`mobile_about_inner_details_${
+              index + 1
+            } mobile_about_inner_details_circle`}
+            ref={(el: HTMLDivElement | null) => {
+              if (el) circlesRef.current[index] = el;
+            }}
+          >
+            {circle.icon}
+            <h4>{circle.title}</h4>
+            <p>{circle.description}</p>
+            <div className="mobile_dotted_border"></div>
+          </div>
+        ))}
       </div>
     </section>
   );

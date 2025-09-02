@@ -14,8 +14,8 @@ export default function Home() {
     <div className={styles.home_container}>
       <MainNavigation />
       <Banner />
-       {/*<About />
-      <WhyChooseUs />
+      <About />
+      {/*<WhyChooseUs />
       <Services />
       <Testimonial />
       <ContactUs />

@@ -16,3 +16,33 @@
 .both {
   padding: 8rem !important;
 }
+
+@media (max-width: 1160px) {
+  .spacer {
+    padding: 6rem 4rem !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .spacer {
+    padding: 6rem 2rem !important;
+  }
+}
+
+@media (max-width: 570px) {
+  .spacer {
+    padding: 6rem 1rem !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .spacer {
+    padding: 6rem 0.5rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .spacer {
+    padding: 3rem 8px !important;
+  }
+}

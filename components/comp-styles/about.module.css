@@ -7,7 +7,8 @@
 
 .about_inner_circle_container {
   /* --outer_circle_radius: 800px; */
-  --outer_circle_radius: 550px;
+  /* --outer_circle_radius: 550px; */
+  --outer_circle_radius: 600px;
   /* background-color: #fff; */
   border: 2px solid #fff;
   width: 100%;
@@ -65,56 +66,65 @@
 .about_main_button:hover {
   text-decoration: underline;
 }
-/* 
-.about_inner_details_circle {
-  --inner_circle_radius: 200px;
-  background-color: #fff;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  max-width: var(--inner_circle_radius);
-  max-height: var(--inner_circle_radius);
-  min-width: var(--inner_circle_radius);
-  min-height: var(--inner_circle_radius);
-  padding: 2rem;
-  position: absolute;
-  border: 8px solid #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #000;
+
+/* MOBILE STYLING */
+
+.about_inner_circle_container {
 }
 
-.about_inner_details_circle h4 {
-  font-family: roboto;
-  font-weight: 500;
-  font-size: 1.1rem;
-  color: #fd1d1d;
+.mobile_about_container {
+  display: none;
 }
 
-.about_inner_details_circle p {
-  font-family: roboto;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.1rem;
-}
+@media (max-width: 890px) {
+  .about_inner_circle_container {
+    display: none;
+  }
 
-.about_inner_details_1 {
-  top: 15%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-}
+  .mobile_about_container {
+    display: block;
+    --outer_circle_radius: 600px;
+    /* background-color: #fff; */
+    /* border: 2px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .mobile_about_main_title {
+    font-family: roboto;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    background: #833ab4;
+    background: linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      #fd1d1d 50%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: 3rem;
+  }
 
-.about_inner_details_2 {
-  bottom: 15%;
-  left: 15%;
-  transform: translate(-50%, 50%);
+  .mobile_about_main_subtitle {
+    max-width: calc(var(--outer_circle_radius) / 2);
+    text-align: center;
+    font-family: roboto;
+    font-size: 0.85rem;
+    font-weight: 300;
+  }
+  .mobile_about_main_button {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+  }
 }
-
-.about_inner_details_3 {
-  top: 50%;
-  right: 0;
-  transform: translate(50%, -50%);
-} */
