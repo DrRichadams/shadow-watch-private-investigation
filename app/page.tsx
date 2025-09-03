@@ -15,9 +15,9 @@ export default function Home() {
       <MainNavigation />
       <Banner />
       <About />
-      {/*<WhyChooseUs />
+      <WhyChooseUs />
       <Services />
-      <Testimonial />
+      {/*<Testimonial />
       <ContactUs />
       <Newsletter />
       <Footer /> */}
