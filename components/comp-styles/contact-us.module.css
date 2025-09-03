@@ -15,11 +15,14 @@
   font-size: 4rem;
   font-weight: 800;
   color: #d0b57f;
+  text-align: center;
 }
 
 .contact_us_description {
   font-family: roboto;
   font-weight: 300;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 .contact_us_form {
@@ -94,4 +97,39 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+@media (max-width: 1040px) {
+  .contact_us_container {
+    padding: 3rem 8rem;
+  }
+}
+
+@media (max-width: 910px) {
+  .contact_us_container {
+    padding: 3rem 4rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .contact_us_container {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .contact_us_container {
+    padding: 3rem 1rem;
+  }
+  .user_details {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .contact_us_title {
+    font-size: 3rem;
+  }
+
+  .contact_us_description {
+    font-size: 1rem;
+  }
 }

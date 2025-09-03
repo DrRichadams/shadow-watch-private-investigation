@@ -24,7 +24,7 @@
 
 .newsletter_description {
   font-size: 1.2rem;
-  font-family: inter;
+  font-family: roboto;
   font-weight: 300;
   max-width: 600px;
   margin-top: 1rem;
@@ -50,4 +50,21 @@
   font-size: 1rem;
   background-color: transparent;
   color: #1abb38;
+}
+
+@media (max-width: 780px) {
+  .newsletter_container {
+    padding: 2rem;
+  }
+  .newsletter_title {
+    font-size: 3.5rem;
+  }
+
+  .newsletter_description {
+    font-size: 1rem;
+    font-family: roboto;
+    max-width: none;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+  }
 }

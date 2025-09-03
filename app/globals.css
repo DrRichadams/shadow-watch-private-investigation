@@ -16,11 +16,6 @@ body {
   scale: 0.9;
 }
 
-.testimonials_box {
-  margin-top: 4rem;
-  padding: 1rem 3rem;
-}
-
 /* styles/globals.css */
 .testimonials_box .swiper-pagination-bullet {
   background-color: #ccc; /* default color */
@@ -61,4 +56,11 @@ body {
 .testimonials_box .swiper-button-prev::after {
   font-size: 20px; /* arrow size */
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
 }

@@ -18,7 +18,7 @@ export default function Testimonial() {
         ensure compliance with our safety standards.
       </p>
 
-      <div className="testimonials_box">
+      <div className={styles.testimonials_box}>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation

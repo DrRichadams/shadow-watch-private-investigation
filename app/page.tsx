@@ -17,10 +17,10 @@ export default function Home() {
       <About />
       <WhyChooseUs />
       <Services />
-      {/*<Testimonial />
+      <Testimonial />
       <ContactUs />
       <Newsletter />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
