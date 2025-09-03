@@ -12,22 +12,8 @@ export default function Services() {
       </p>
       <div className={styles.services}>
         {services.map((service, index) => (
-          <div
-            className={styles.service_container}
-            key={service.id}
-            style={{
-              flexDirection: (index + 1) % 2 == 0 ? "row-reverse" : "row",
-            }}
-          >
-            <div
-              className={styles.service_image_box}
-              style={{
-                clipPath:
-                  (index + 1) % 2 == 0
-                    ? "polygon(0 0, 100% 0, 100% 50%, 100% 100%, 27% 100%, 0% 50%)"
-                    : "polygon(0 0, 100% 0, 100% 50%, 75% 100%, 0 100%, 0% 50%)",
-              }}
-            >
+          <div className={styles.service_container} key={service.id}>
+            <div className={styles.service_image_box}>
               <img src={service.image} alt={service.title} />
             </div>
             <div className={styles.service_details}>
